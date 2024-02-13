@@ -1,3 +1,5 @@
+<img src="https://github.com/fabiomatricardi/HowSmalltoChatYouCanGo/raw/main/QuyenChat-github.png" width=800>
+
 # Quyen Chat 4 ALL
 ### Aka, how SMALL can you go to build a GOOD Chatbot?
 
@@ -27,3 +29,9 @@ Open the terminal and with the venv activated run this command:
 ```
 streamlit run qMini_chat.py
 ```
+
+The interface will be like this one
+
+<img src="https://github.com/fabiomatricardi/HowSmalltoChatYouCanGo/raw/main/qMini_ChatInterface.png" width=700>
+
+<img src="https://github.com/fabiomatricardi/HowSmalltoChatYouCanGo/raw/main/qMini_ChatInterface2.png" width=700>
