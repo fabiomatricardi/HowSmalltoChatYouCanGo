@@ -1,7 +1,7 @@
 <img src="https://github.com/fabiomatricardi/HowSmalltoChatYouCanGo/raw/main/QuyenChat-github.png" width=800>
 
-# Quyen Chat 4 ALL
-### Aka, how SMALL can you go to build a GOOD Chatbot?
+# The Future in Your Hands: Build Your Custom AI Conversation Partner - Quyen Chat 4 ALL
+### Don’t just read about AI, build your own! A step-by-step guide awaits… Start Your Bot adventure with Quyen-Mini Now!
 
 Repo of the code from the Medium article
 
