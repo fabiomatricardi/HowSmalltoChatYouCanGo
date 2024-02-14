@@ -49,6 +49,8 @@ st.set_page_config(
 st.header("Your own LocalGPT with Quyen-Mini 🐦")
 st.markdown("#### :green[*Quyen-Mini-v0.1.Q4_K_M.gguf - the best 1.8B  English/Chinese small model?*]")
 
+
+# create THE SESSIoN STATES
 if "logfilename" not in st.session_state:
 ## Logger file
     tstamp = datetime.datetime.now()
@@ -60,9 +62,6 @@ if "logfilename" not in st.session_state:
     writehistory(st.session_state.logfilename,f'🧠🫡: You are a helpful assistant.')    
     writehistory(st.session_state.logfilename,f'🐦: How may I help you today?')
 
-if "big_context" not in st.session_state:
-    st.session_state.big_context = ""
-
 if "len_context" not in st.session_state:
     st.session_state.len_context = 0
 
@@ -72,6 +71,7 @@ if "limiter" not in st.session_state:
 if "bufstatus" not in st.session_state:
     st.session_state.bufstatus = "### :green[Good]"
 
+# CREATE THE SIDEBAR
 with st.sidebar:
     st.markdown("""### Missing features:
 - <s>ConversationBuffer</s>
@@ -86,7 +86,7 @@ with st.sidebar:
                         value="You are a helpful assistant.",
                         key="system_prompt",
                         height=20)
-    st.session_state.limiter = st.slider('Turns:', min_value=8, max_value=17, value=13, step=1)
+    st.session_state.limiter = st.slider('Turns:', min_value=7, max_value=17, value=13, step=1)
     st.markdown("### Buffer status")
     st.markdown(st.session_state.bufstatus)
     st.markdown("### Logfile")
@@ -103,10 +103,6 @@ if "messages" not in st.session_state:
         {"role": "system", "content": "You are a helpful assistant.",},
         {"role": "assistant", "content": "How may I help you today?"}
     ]
-
-
-if "current_response" not in st.session_state:
-    st.session_state.current_response = ""
 
 # We loop through each message in the session state and render it as
 # a chat message.
